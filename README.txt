@@ -15,7 +15,8 @@ ABOUT
 This plugin for Moodle allows calling the privacy api user data deletion via a web-service call.
 
 The plugin uses moodle web-service layer and the web-service call is the same as for any other moodle web-services.
-(example: https://yoursite/webservice/rest/server.php?wstoken=opensesame&wsfunction=local_gdpr_deleteuserdata_single&moodlewsrestformat=json&parameters[userid]=23)
+(example: https://yoursite/webservice/rest/server.php?wstoken=opensesame&wsfunction=local_gdpr_deleteuserdata_single
+&moodlewsrestformat=json&parameters[userid]=23)
 
 The web-service call takes as parameter the  moodle userid. It requires : moodle/user:delete permission.
 Advisable steps to set up the web-service:
