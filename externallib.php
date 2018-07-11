@@ -28,7 +28,7 @@ require_once("$CFG->libdir/externallib.php");
 class local_gdpr_deleteuserdata_external extends external_api {
 
     /**
-     * Returns description of method parameters
+     * Web-service parameters: moodle user id.
      * @return external_function_parameters
      */
     public static function single_parameters() {
@@ -43,6 +43,10 @@ class local_gdpr_deleteuserdata_external extends external_api {
         );
     }
 
+    /**
+     * Web-service return
+     * @return external_multiple_structure
+     */
     public static function single_returns() {
         return new external_multiple_structure(
             new external_single_structure(
@@ -54,7 +58,7 @@ class local_gdpr_deleteuserdata_external extends external_api {
     }
 
     /**
-     * Register a slave site to master instance
+     * Executes privacy api userdata deletion
      * @return array with message
      */
     public static function single($parameters) {
