@@ -59,6 +59,7 @@ class local_gdpr_deleteuserdata_external extends external_api {
 
     /**
      * Executes privacy api userdata deletion
+     * @param array for now only moodle userid
      * @return array with message
      */
     public static function single($parameters) {
